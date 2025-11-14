@@ -1,0 +1,210 @@
+🧠 CORE REACT TASKS
+1️⃣ Todo App (with CRUD)
+
+Skills Tested: State, Props, Conditional Rendering, Array methods
+Task:
+
+Add, edit, delete, and mark tasks complete.
+
+Store data in localStorage.
+
+Use controlled inputs.
+
+💡 Bonus: Add search and filter (“completed” / “pending”).
+
+2️⃣ Form Validation
+
+Skills Tested: Controlled forms, useState, useEffect, validation logic
+Task:
+
+Create a registration form with fields (Name, Email, Password, Confirm Password).
+
+Validate email and password strength.
+
+Show inline error messages.
+
+💡 Bonus: Add show/hide password toggle.
+
+3️⃣ Fetch & Display API Data
+
+Skills Tested: useEffect, async/await, conditional rendering
+Task:
+
+Fetch data from a public API (like https://jsonplaceholder.typicode.com/users
+)
+
+Show loading and error states.
+
+Add search and pagination.
+
+💡 Bonus: Implement infinite scroll.
+
+4️⃣ Modal or Popup Component
+
+Skills Tested: Props, Conditional Rendering, Portals
+Task:
+
+Build a reusable <Modal> component.
+
+It should support dynamic title, content, and buttons.
+
+Close on overlay click or ESC key.
+
+💡 Bonus: Animate open/close with CSS or Framer Motion.
+
+5️⃣ Debounced Search
+
+Skills Tested: useEffect, useCallback, performance optimization
+Task:
+
+Create a search box that fetches results after the user stops typing for 500ms.
+
+Prevent multiple unnecessary API calls.
+
+6️⃣ Theme Toggle (Dark/Light Mode)
+
+Skills Tested: Context API / useContext
+Task:
+
+Toggle theme using a button.
+
+Store theme in localStorage and apply it globally.
+
+7️⃣ Pagination Component
+
+Skills Tested: Props, State, Array logic
+Task:
+
+Build a reusable pagination component that takes total items and page size.
+
+Navigate pages and update visible items.
+
+8️⃣ Reusable Dropdown Component
+
+Skills Tested: Component design, State, Props
+Task:
+
+Build a <Dropdown> that accepts an array of options and a callback on select.
+
+Should close when clicked outside.
+
+9️⃣ Image Gallery with Filter
+
+Skills Tested: useState, filtering, rendering lists
+Task:
+
+Show a list of images with category buttons (e.g., Nature, Food, Travel).
+
+Clicking a category filters the images.
+
+💡 Bonus: Add lazy loading or skeleton UI.
+
+🔟 Protected Route
+
+Skills Tested: React Router, Authentication logic
+Task:
+
+Create a protected route that redirects unauthenticated users to login.
+
+Store login state in Context or Redux.
+
+⚙️ INTERMEDIATE / ADVANCED TASKS
+11️⃣ Cart System
+
+Skills Tested: Context / Redux, Derived state
+Task:
+
+Add products to cart, update quantity, remove items.
+
+Show total price.
+
+💡 Bonus: Persist cart in localStorage.
+
+12️⃣ Custom Hook
+
+Skills Tested: Reusability, hook abstraction
+Task:
+
+Build useFetch(url) or useLocalStorage(key, value) custom hook.
+
+13️⃣ Performance Optimization
+
+Skills Tested: React.memo, useMemo, useCallback
+Task:
+
+Optimize a component that re-renders unnecessarily.
+
+Explain how memoization helps.
+
+14️⃣ Code Splitting & Lazy Loading
+
+Skills Tested: React.lazy, Suspense
+Task:
+
+Lazy-load a component (like Dashboard).
+
+Show fallback loader until it loads.
+
+15️⃣ Responsive UI with Tailwind / CSS
+
+Skills Tested: Tailwind classes, Flex/Grid
+Task:
+
+Build a responsive card grid layout for users or products.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🧠 CORE REACT TASKS (Beginner → Intermediate)
+
+⏰ Total: ~6 hours
+
+#	Task	Estimated Duration	Notes / Focus Areas
+1️⃣	Todo App (CRUD + localStorage)	45–60 min	Manage list with useState; implement add/edit/delete/mark complete; persist data in localStorage; bonus: search & filter.
+2️⃣	Form Validation (Register Form)	40–50 min	Controlled inputs; email/password validation; inline errors; bonus: show/hide password toggle.
+3️⃣	Fetch & Display API Data	45–60 min	Fetch users via useEffect; handle loading/error; add pagination; bonus: infinite scroll.
+4️⃣	Modal / Popup Component	40 min	Reusable <Modal> with dynamic content; close on overlay click or ESC key; bonus: CSS or Framer Motion animation.
+5️⃣	Debounced Search	35–45 min	Implement delay using useEffect + setTimeout; prevent unnecessary API calls.
+6️⃣	Theme Toggle (Dark/Light Mode)	30–40 min	Context API + localStorage; global theme toggle.
+7️⃣	Pagination Component (Reusable)	30–40 min	Props-driven component; navigate between pages; show current items.
+8️⃣	Reusable Dropdown Component	30–40 min	Custom dropdown using state and props; close on outside click.
+9️⃣	Image Gallery with Filter	40–50 min	Filter by category; conditional rendering; bonus: lazy loading / skeleton.
+🔟	Protected Route	40–45 min	Implement auth guard using React Router + Context or Redux.
+
+
+
+
+⚙️ INTERMEDIATE / ADVANCED TASKS
+
+⏰ Total: ~4.5 hours
+
+#	Task	Estimated Duration	Notes / Focus Areas
+11️⃣	Cart System (Mini eCommerce)	60–75 min	Context / Redux Toolkit; add, update, remove; compute totals; persist in localStorage.
+12️⃣	Custom Hook (useFetch / useLocalStorage)	25–30 min	Reusable hook; returns state, loading, and error.
+13️⃣	Performance Optimization	40–45 min	Use React.memo, useMemo, useCallback; demonstrate optimization and explain why.
+14️⃣	Code Splitting & Lazy Loading	30–35 min	Implement React.lazy + Suspense fallback; dynamic imports for large components.
+15️⃣	Responsive UI with Tailwind / CSS Grid	40–50 min	Responsive card layout; grid/flex; adaptive design for mobile/tablet/desktop.
+
+
+
+
+🧩 BONUS REAL-WORLD TASKS (Optional, if time permits)
+
+⏰ Total: ~3 hours
+
+#	Task	Duration	Notes
+16️⃣	Debounced Search + Infinite Scroll Combined	60–70 min	Real API + pagination + debounce + scroll listener.
+17️⃣	File Upload with Preview	45–50 min	Preview before upload, file size validation, progress UI.
+18️⃣	Multi-Step Form	45–60 min	Multi-step registration with progress and summary page.
