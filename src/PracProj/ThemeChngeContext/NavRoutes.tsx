@@ -7,7 +7,7 @@ const NavRoutes = () => {
   return (
     <div>
       <p className={`${theme ? "text-black bg-blue-200" : "text-white bg-gray-800"}`}>NavRoutes</p>
-      <p onClick={() => setTheme(!theme)}>changeTheme</p>
+      <button onClick={() => setTheme(!theme)}>changeTheme</button>
     </div>
   );
 };

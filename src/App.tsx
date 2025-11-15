@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './PracProj/ToDoList/Home'
 import ThemeChangeHome from './PracProj/ThemeChngeContext/ThemeChangeHome'
+import FormHome from './PracProj/FormValidation/FormHome'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
      {/* <Home /> */}
-     <ThemeChangeHome />
+     {/* <ThemeChangeHome /> */}
+     <FormHome />
     </>
   )
 }
