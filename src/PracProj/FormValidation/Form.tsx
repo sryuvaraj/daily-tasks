@@ -2,23 +2,34 @@ import React, { useState } from "react";
 import InputBox from "./InputBox";
 import DetailsRow from "./DetailsRow";
 
-const Form = ({ employees, setEmployees, updateEditData, isEdit, editableData, formData, setFormData, initData }: any) => {
-
+const Form = ({
+  employees,
+  setEmployees,
+  updateEditData,
+  isEdit,
+  editableData,
+  formData,
+  setFormData,
+  initData,
+}: any) => {
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
   const handleCancle = () => {
-    setFormData(initData)
-  }
+    setFormData(initData);
+  };
 
   const handleSubmit = () => {
-    const exist = employees?.some((employee:any) => employee?.email === formData?.email)
-    if(exist){
-      return
+    const exist = employees?.some(
+      (employee: any) => employee?.email === formData?.email
+    );
+    if (exist) {
+      return;
     }
     setEmployees([...employees, formData]);
+    setFormData(initData)
   };
 
   return (
@@ -68,8 +79,16 @@ const Form = ({ employees, setEmployees, updateEditData, isEdit, editableData, f
           handleChange={handleChange}
         />
       </div>
-      {!isEdit ?  <button onClick={handleSubmit}>Submit</button>:
-      <><button onClick={() =>updateEditData(formData?.email)}>Update</button><button onClick={handleCancle}>Cancle</button></>}
+      {!isEdit ? (
+        <button onClick={handleSubmit}>Submit</button>
+      ) : (
+        <div className="flex items-center gap-4">
+          <button onClick={() => updateEditData(formData?.email)}>
+            Update
+          </button>
+          <button onClick={handleCancle}>Cancle</button>
+        </div>
+      )}
       {/* <div>
         <p>First Name:</p>
         <InputBox
