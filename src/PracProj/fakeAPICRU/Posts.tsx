@@ -20,13 +20,13 @@ const Posts = () => {
       <div>
         {posts?.length > 0 &&
           posts?.map((post: any, index: number) => (
-            <Link
-              to={`/${post?.id}`}
+            <div
+              
               key={index}
               className="flex flex-col gap-4 border border-green-600"
             >
-              <Post post={post} />
-            </Link>
+              <Post post={post} setPosts={setPosts} />
+            </div>
           ))}
       </div>
     </div>
